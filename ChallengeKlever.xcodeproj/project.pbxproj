@@ -11,6 +11,10 @@
 		A5F7E95E280F8984006C368F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F7E95D280F8984006C368F /* ContentView.swift */; };
 		A5F7E960280F8987006C368F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5F7E95F280F8987006C368F /* Assets.xcassets */; };
 		A5F7E963280F8987006C368F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5F7E962280F8987006C368F /* Preview Assets.xcassets */; };
+		A5F7E9E92810C967006C368F /* PostsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F7E9E82810C967006C368F /* PostsModel.swift */; };
+		A5F7E9EB2810CBE3006C368F /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F7E9EA2810CBE3006C368F /* Network.swift */; };
+		A5F7E9F028110FA0006C368F /* NewPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F7E9EF28110FA0006C368F /* NewPostView.swift */; };
+		A5F7E9F228111408006C368F /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F7E9F128111408006C368F /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		A5F7E95D280F8984006C368F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A5F7E95F280F8987006C368F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5F7E962280F8987006C368F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A5F7E9E82810C967006C368F /* PostsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsModel.swift; sourceTree = "<group>"; };
+		A5F7E9EA2810CBE3006C368F /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		A5F7E9EF28110FA0006C368F /* NewPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostView.swift; sourceTree = "<group>"; };
+		A5F7E9F128111408006C368F /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +59,10 @@
 		A5F7E95A280F8984006C368F /* ChallengeKlever */ = {
 			isa = PBXGroup;
 			children = (
+				A5F7E9EC28110F58006C368F /* Model */,
+				A5F7E9EE28110F77006C368F /* View */,
+				A5F7E9ED28110F65006C368F /* Network */,
 				A5F7E95B280F8984006C368F /* ChallengeKleverApp.swift */,
-				A5F7E95D280F8984006C368F /* ContentView.swift */,
 				A5F7E95F280F8987006C368F /* Assets.xcassets */,
 				A5F7E961280F8987006C368F /* Preview Content */,
 			);
@@ -65,6 +75,32 @@
 				A5F7E962280F8987006C368F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A5F7E9EC28110F58006C368F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A5F7E9E82810C967006C368F /* PostsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A5F7E9ED28110F65006C368F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A5F7E9EA2810CBE3006C368F /* Network.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		A5F7E9EE28110F77006C368F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A5F7E95D280F8984006C368F /* ContentView.swift */,
+				A5F7E9EF28110FA0006C368F /* NewPostView.swift */,
+				A5F7E9F128111408006C368F /* DetailView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +173,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5F7E9EB2810CBE3006C368F /* Network.swift in Sources */,
+				A5F7E9F228111408006C368F /* DetailView.swift in Sources */,
 				A5F7E95E280F8984006C368F /* ContentView.swift in Sources */,
+				A5F7E9E92810C967006C368F /* PostsModel.swift in Sources */,
 				A5F7E95C280F8984006C368F /* ChallengeKleverApp.swift in Sources */,
+				A5F7E9F028110FA0006C368F /* NewPostView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +310,7 @@
 				DEVELOPMENT_TEAM = 3N29W8N95Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ChallengeKlever/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +340,7 @@
 				DEVELOPMENT_TEAM = 3N29W8N95Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ChallengeKlever/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
