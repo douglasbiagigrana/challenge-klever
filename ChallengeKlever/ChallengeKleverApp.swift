@@ -11,7 +11,7 @@ import SwiftUI
 struct ChallengeKleverApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().environmentObject(Network())
         }
     }
 }
